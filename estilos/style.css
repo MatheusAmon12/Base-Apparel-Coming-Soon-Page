@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --cor_primaria_1: hsl(0, 36%, 70%);
+    --cor_primaria_2: hsl(0, 93%, 68%);
+    --cor_neutra: hsl(0, 6%, 24%);
+    --gradiente_1_1: hsl(0, 0%, 100%);
+    --gradiente_1_2: hsl(0, 100%, 98%);
+    --gradiente_2_1: hsl(0, 80%, 86%);
+    --gradiente_2_1: hsl(0, 74%, 74%);
+
+    --fonte: 'Josefin Sans', sans-serif;
+
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 375px) and (max-width: 1439px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+        height: 950px;
+    }
+
+    #cabecalho{
+        background-color: white;
+        width: 100%;
+        height: 100px;
+    }
+
+    #cabecalho > img{
+        position: relative;
+        left: 10%;
+        top: 35%;
+
+        width: 120px;
+
+    }
+
+    #img{
+        background: url('../imagens/hero-mobile.jpg') no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+    }
+
+    #txt{
+        width: 100%;
+    }
+
+    #txt > h1{
+        font: 600 2.5em var(--fonte);
+        letter-spacing: 10px;
+        text-align: center;    
+    }
+
+    #txt > p{
+        margin-top: 15px;
+        margin-left: 65px;
+        margin-right: 65px;
+
+        text-align: center;
+        color: var(--cor_primaria_1);
+        font: 600 16px var(--fonte);
+    }
+
+    #entrada{
+        width: 100%;
+        height: 100px;
+    }
+
+    #entrada > form{
+        margin-top: 70px;
+    }
+
+    #iemail::placeholder{
+        color: var(--cor_primaria_1);
+    }
+
+    #entrada > form > #iemail{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font: 600 16px var(--fonte);
+        color: var(--cor_primaria_1);
+        background-color: none;
+        padding-left: 20px;
+    
+        width: 360px;
+        height: 50px;
+        border-radius: 40px;
+        border: 2px solid var(--cor_primaria_1);
+    }
+    #entrada #enviar{
+        position: relative;
+        top: -21px;
+        left: -11px;
+
+        width: 70px;
+        height: 50px;
+        border-radius: 40px;
+        border: none;
+
+        background-color: hsl(0, 74%, 74%);
+    }
+}
+@media screen and (min-width: 1440px) {
+    
+}
