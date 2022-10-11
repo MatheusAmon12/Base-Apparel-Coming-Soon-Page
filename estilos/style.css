@@ -46,7 +46,7 @@
         background: url('../imagens/hero-mobile.jpg') no-repeat;
         background-size: cover;
         width: 100%;
-        height: 300px;
+        height: 240px;
     }
 
     #txt{
@@ -76,6 +76,7 @@
 
     #entrada > form{
         margin-top: 70px;
+        position: relative;
     }
 
     #iemail::placeholder{
@@ -101,6 +102,9 @@
         border: none;
 
         background-color: hsl(0, 74%, 74%);
+        position: absolute;
+        left: 80%;
+        top: 0%;
     }
 }
 @media screen and (min-width: 1440px) {
@@ -155,10 +159,6 @@
         grid-area: 'secao_2';
         width: 100%;
         height: 100px;
-    }
-
-    #entrada > form{
-        margin-top: 70px;
     }
 
     #iemail::placeholder{
