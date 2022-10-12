@@ -22,9 +22,9 @@
     #container{
         display: flex;
         flex-direction: column;
-        max-width: 375px;
         height: 950px;
         margin: auto;
+        max-width: 375px;
     }
 
     #cabecalho{
@@ -74,7 +74,9 @@
         height: 100px;
     }
 
-    #entrada > form{
+    #formulario{
+        max-width: 500px;
+        margin: auto;
         margin-top: 70px;
         position: relative;
     }
@@ -83,7 +85,7 @@
         color: var(--cor_primaria_1);
     }
 
-    #entrada > form > #iemail{
+    #iemail{
         font: 600 16px var(--fonte);
         color: var(--cor_primaria_1);
         padding-left: 20px;
@@ -95,11 +97,12 @@
         border-radius: 40px;
         border: 2px solid var(--cor_primaria_1);
     }
-    #entrada #enviar{
+    #enviar{
         width: 70px;
         height: 50px;
         border-radius: 40px;
         border: none;
+        cursor: pointer;
 
         background-color: hsl(0, 74%, 74%);
         position: absolute;
@@ -109,13 +112,14 @@
 }
 @media screen and (min-width: 1440px) {
     #container{
-        max-width: 100vw;
+        max-width: 1440px;
         display: grid;
         grid-template: 
         "cabecalho cabecalho imagem" 20%
         "conteudo conteudo imagem" 45%
         "conteudo-2 conteudo-2 imagem";
         grid-template-columns: 30% 30% 40%;
+        margin: auto;
     }
 
     #cabecalho{
@@ -185,6 +189,7 @@
         height: 50px;
         border-radius: 40px;
         border: none;
+        cursor: pointer;
 
         background-image: linear-gradient(to right, var(--cor_primaria_1), var(--cor_primaria_2));
         position: absolute;
